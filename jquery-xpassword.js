@@ -30,11 +30,13 @@
 	 */
 	xPassword.prototype.init = function() {
 		var name = this.$element.attr('name')
-		, val = this.$element.val();
-		
-		if (this.options.formField && name != '') this.$element.attr('name', name + '-displayed')
-		if (this.options.formField)
-			this.$element.after('<input type="hidden" class="xPassword-container" name="' + name + '" value= "' + val + '"/>')
+		, val = this.$element.val()
+
+		if (this.options.formField && name != '') {
+			this.$element
+				.removeAttr('name')
+				.after('<input type="hidden" class="xPassword-container" name="' + name + '" value= "' + val + '"/>')
+		}
 		
 		this.$element
 			.on('keyup', this.update)

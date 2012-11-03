@@ -12,6 +12,7 @@ Features:
 	Supporting all browsers (checked in IE 7+, Chrome, Firefox)
 
 This plugin required jQuery.
+You can get real value in input box across js such method: $(elem).data('xpass')
 
 Using:
 	Download and install latest version of xPassword
@@ -19,5 +20,5 @@ Using:
 	Join plugin to element, for example - $('#password').xPassword();
 
 Params:
-	formField - If is true, plugin will create hidden input with parent input name and add to parent input name attributte "-displayed". By default "true"
+	formField - If is true, server get real value in input box (this feature can create mistakes in your website). By default "true"
 	maskSymbol - symbol, for hide real words, by default "•"
