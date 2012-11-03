@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<title>xPassword demo</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="jquery-xpassword.js"></script>
+	<script>
+		$(function(){
+			$('#xpass').xPassword();
+			$('#xpass').xPassword({maskSymbol: '*', formField: false});
+		});
+	</script>
+</head>
+<body>
+	<input style="font-size: 30px" type="text" id="xpass" name="xpass" placeholder="Type password here" /><br/>
+	<input style="font-size: 30px" type="text" id="xpass-1" name="xpass-1" placeholder="Type password here" /><br/>
+</body>
+</html>
