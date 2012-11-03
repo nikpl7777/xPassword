@@ -32,7 +32,7 @@
 		var name = this.$element.attr('name')
 		, val = this.$element.val();
 		
-		if (name != '') this.$element.attr('name', name + '-displayed')
+		if (this.options.formField && name != '') this.$element.attr('name', name + '-displayed')
 		if (this.options.formField)
 			this.$element.after('<input type="hidden" class="xPassword-container" name="' + name + '" value= "' + val + '"/>')
 		

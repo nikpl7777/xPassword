@@ -1,1 +1,23 @@
-<h2>Project description</h2>
+﻿xPassword is a free and simple tool for creating extented password input boxes.
+
+This plugin allow you see last symbol while entering password.
+So this feature can make your sign up form more simple.
+You can delete input box confirm for password, because user can see errors in he password.
+
+Features:
+	Displaying last symbol in password input box
+	For server side scripts this plugin maximum transparent (if enabled formField option)
+	Custom mask symbols
+	Fast and simple installing
+	Supporting all browsers (checked in IE 7+, Chrome, Firefox)
+
+This plugin required jQuery.
+
+Using:
+	Download and install latest version of xPassword
+	Connect plugin after jQuery
+	Join plugin to element, for example - $('#password').xPassword();
+
+Params:
+	formField - If is true, plugin will create hidden input with parent input name and add to parent input name attributte "-displayed". By default "true"
+	maskSymbol - symbol, for hide real words, by default "•"
