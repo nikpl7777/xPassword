@@ -142,5 +142,5 @@
 		'formField': true
 	}
 
-	//$.fn.xPassword.Constructor = xPassword
+	$.fn.xPassword.Constructor = xPassword
 }(window.jQuery);
